@@ -2,7 +2,6 @@
 title: '22-04-11-SQL-Join정리'
 date: 2022-04-11 20:28:00 +0900
 category: 'DB'
-tags: 'SQL', 'PostgreSQL', 'Join'
 draft: true
 ---
 

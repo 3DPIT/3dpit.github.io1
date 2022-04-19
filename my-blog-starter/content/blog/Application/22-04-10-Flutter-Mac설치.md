@@ -2,7 +2,6 @@
 title: '22-04-10-FlutterMac설치'
 date: 2022-04-10 19:20:00 +0900
 category: 'Application'
-tags: 'Flutter', 'Mac', 'Android', 'Application'
 draft: true
 ---
 

@@ -2,7 +2,6 @@
 title: '22-04-09-GitBlog-MdImageSave'
 date: 2022-04-09 14:08:00 +0900
 category: 'Github_Blog'
-tags: 'Github', 'BlogImage'
 draft: true
 ---
 ## 목차

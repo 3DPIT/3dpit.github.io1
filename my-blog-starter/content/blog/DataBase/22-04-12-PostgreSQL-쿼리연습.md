@@ -2,7 +2,6 @@
 title: '22-04-12-PostgresSQL-쿼리연습'
 date: 2022-04-12 09:18:00 +0900
 category: 'DB'
-tags: 'SQL', 'PostgreSQL', 'Join'
 draft: true
 ---
 

@@ -2,7 +2,6 @@
 title: '21-12-07-CsvHelper사용법'
 date: 2021-12-07 13:50:00 +0900
 category: 'Csharp'
-tags: 'Csharp', 'NugetPackage'
 draft: true
 ---
 ## 2021.12.07_CsvHelper사용법
