@@ -24,7 +24,7 @@ export default ({ data, location }) => {
   const { siteMetadata } = data.site
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
-  const category = useMemo(
+  const categories = useMemo(
     () => _.uniq(posts.map(({ node }) => node.frontmatter.category)),
     []
   )
@@ -55,7 +55,7 @@ export default ({ data, location }) => {
       <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
       <Bio ref={bioRef} />
       <Category
-        category={category}
+        categories={categories}
         category={category}
         selectCategory={selectCategory}
       />

@@ -1,7 +1,7 @@
 module.exports = {
-  title: `Bee starter`,
+  title: `3DPIT Study Blog`,
   description: `Blog posted about ...`,
-  author: `[Your Name]`,
+  author: `[KyeongMinPark]`,
   introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
   siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
   social: {
@@ -16,7 +16,7 @@ module.exports = {
   keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
+    utterances: '3dpit/gatsby-starter-bee', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post

@@ -3,7 +3,7 @@ import { rhythm } from '../../utils/typography'
 import './index.scss'
 import { Item } from './item'
 
-export const Category = ({ category, category, selectCategory }) => {
+export const Category = ({ categories, category, selectCategory }) => {
   const containerRef = useRef(null)
 
   const scrollToCenter = useCallback(tabRef => {
@@ -28,7 +28,7 @@ export const Category = ({ category, category, selectCategory }) => {
       }}
     >
       <Item title={'All'} selectedCategory={category} onClick={selectCategory} scrollToCenter={scrollToCenter} />
-      {category.map((title, idx) => (
+      {categories.map((title, idx) => (
         <Item
           key={idx}
           title={title}

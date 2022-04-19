@@ -2,7 +2,7 @@
 title: '22-04-10-FlutterMac설치'
 date: 2022-04-10 19:20:00 +0900
 category: 'Application'
-draft: true
+draft: false
 ---
 
 ## 22-04-10-Flutter-Mac설치
