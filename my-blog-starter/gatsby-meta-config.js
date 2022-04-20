@@ -1,6 +1,6 @@
 module.exports = {
   title: `3DPIT Study Blog`,
-  description: `Blog posted about ...`,
+  description: `Study And Developer`,
   author: `[KyeongMinPark]`,
   introduction: `Docker, C++, C#, Java, Golang으로 개발
   모니터링운영 및 개발, 자원수집기 Beat & Exporter 개발
