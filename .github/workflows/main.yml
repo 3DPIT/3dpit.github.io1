@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - gh-pages
 name: build gatsby
 jobs:
   build_gatsby:
@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+
+      - name: yarn install
+        run: yarn install
 
       - name: gatsby build
         env:
@@ -18,6 +21,6 @@ jobs:
       - name: deploy
         uses: maxheld83/ghpages@v0.2.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GPARKKII_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_PAT: ${{ secrets.KMP }}
           BUILD_DIR: 'public/'
