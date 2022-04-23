@@ -9,9 +9,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      # Node 14.x를 사용합니다.
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
 
-      - name: yarn install
-        run: yarn install
+      # 모듈을 설치합니다.
+      - name: Install packages
+        run: npm ci
+
+      # 테스트를 수행합니다.
+      - name: Run unit test
+        run: npm run test
 
       - name: gatsby build
         env:
