@@ -30,7 +30,3 @@ jobs:
 
       - name: deploy
         run: npm run test
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_PAT: ${{ secrets.GITHUB_API_KEY }}
-          BUILD_DIR: 'public/'
