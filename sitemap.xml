@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://3dpit.github.io/Java/2022-04-23-자바-기초정리1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://3dpit.github.io/Java/2022-04-23-자바의-메모리-모델과-Object-클래스/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://3dpit.github.io/DesignPattern/22-04-18-책임연쇄패턴-4부-자바와스프링에서찾아보는패턴/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://3dpit.github.io/DesignPattern/22-04-18-책임연쇄패턴-3부-장점과단점/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -7,8 +8,8 @@
 <url> <loc>https://3dpit.github.io/DesignPattern/22-04-18-책임연쇄패턴-1부-패턴소개/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://3dpit.github.io/DesignPattern/22-04-17-프록시패턴-4부-자바와스프링에서찾아보는패턴/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://3dpit.github.io/DesignPattern/22-04-17-프록시패턴-3부-장점과단점/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://3dpit.github.io/DesignPattern/22-04-17-프록시패턴-2부-패턴적용하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://3dpit.github.io/DesignPattern/22-04-17-프록시패턴-1부-패턴소개/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://3dpit.github.io/DesignPattern/22-04-17-프록시패턴-2부-패턴적용하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://3dpit.github.io/BlogMake/22-04-16-Gatsby테마적용후배포해보기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://3dpit.github.io/BlogMake/22-04-15-Gatsby를위해필수로알아야할기술/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://3dpit.github.io/BlogMake/22-04-15-Gatsby란무엇일까/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
