@@ -10,9 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: yarn install
-        run: yarn install
-
       - name: gatsby build
         env:
           GH_API_KEY: ${{ secrets.KMP }}
