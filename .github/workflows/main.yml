@@ -29,9 +29,8 @@ jobs:
         run: npm run build
 
       - name: deploy
-        uses: maxheld83/ghpages@v0.2.1
+        run: npm run test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_PAT: ${{ secrets.KMP }}
+          GH_PAT: ${{ secrets.GITHUB_API_KEY }}
           BUILD_DIR: 'public/'
-        run: npm run deploy
