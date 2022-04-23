@@ -15,12 +15,12 @@ jobs:
 
       - name: gatsby build
         env:
-          GH_API_KEY: ${{ secrets.3dpit }}
+          GH_API_KEY: ${{ secrets.KMP }}
         run: yarn build
 
       - name: deploy
         uses: maxheld83/ghpages@v0.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GPARKKII_TOKEN }}
-          GH_PAT: ${{ secrets.3dpit }}
+          GH_PAT: ${{ secrets.KMP }}
           BUILD_DIR: 'public/'
