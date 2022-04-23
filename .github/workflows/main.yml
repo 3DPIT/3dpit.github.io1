@@ -9,15 +9,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      # Node 14.x를 사용합니다.
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      # 모듈을 설치합니다.
+      - name: Install packages
+        run: npm ci
+
+      # 테스트를 수행합니다.
+      - name: Run unit test
+        run: npm run test
 
       - name: gatsby build
         env:
           GH_API_KEY: ${{ secrets.KMP }}
-        run: yarn build
+        run: npm run build
 
       - name: deploy
-        uses: maxheld83/ghpages@v0.2.1
+        run: npm run test
         env:
-          GITHUB_TOKEN: ${{ secrets.GPARKKII_TOKEN }}
-          GH_PAT: ${{ secrets.KMP }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GITHUB_API_KEY }}
           BUILD_DIR: 'public/'
