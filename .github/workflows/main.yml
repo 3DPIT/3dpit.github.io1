@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - gh-pages
 name: build gatsby
 jobs:
   build_gatsby:
@@ -9,34 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      # Node 14.x를 사용합니다.
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14.x'
 
-      # 모듈을 설치합니다.
-      - name: Install packages
-        run: npm ci
-
-      - name: git email
-        run: git config --global user.email oksos0817@naver.com
-      - name: git name
-        run: git config --global user.name 3DPIT
-      # 테스트를 수행합니다.
-      - name: Run unit test
-        run: npm run test
+      - name: yarn install
+        run: yarn install
 
       - name: gatsby build
         env:
           GH_API_KEY: ${{ secrets.KMP }}
-        run: npm run build
+        run: yarn build
 
       - name: deploy
-        run: npm run deploy
+        uses: maxheld83/ghpages@v0.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_PAT: ${{ secrets.KMP }}
           BUILD_DIR: 'public/'
-
-
