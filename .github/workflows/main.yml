@@ -38,8 +38,5 @@ jobs:
       - name: gatsby build
         env:
           GH_API_KEY: ${{ secrets.KMP }}
-      - run: npm run build
-        if: ${{ always() }}
-      - run: npm run deploy
-        if: ${{ always() }}
+        run: npm run deploy
 
