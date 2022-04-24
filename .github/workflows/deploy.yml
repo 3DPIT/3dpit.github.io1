@@ -6,9 +6,10 @@ on:
 jobs:
   deploy:
     runs-on: windows-latest
+    
     steps:
       - uses: actions/checkout@v2
-      - uses: enriikke/gatsby-gh-pages-action@v2.0.0
+      - uses: srepollock/gatsby-gh-pages-action@5517c70e1cb6588f9b158fed64b48f95f2d439c4
         with:
           access-token: ${{ secrets.KMP }}
           deploy-branch: master
