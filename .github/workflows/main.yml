@@ -15,29 +15,24 @@ jobs:
         with:
           node-version: '14.x'
 
-#       # 모듈을 설치합니다.
-#       - name: Install packages
-#         run: npm ci
+      # 모듈을 설치합니다.
+      - name: Install packages
+        run: npm ci
 
-#       # 테스트를 수행합니다.
-#       - name: Run unit test
-#         run: npm run test
+      # 테스트를 수행합니다.
+      - name: Run unit test
+        run: npm run test
 
       - name: gatsby build
         env:
           GH_API_KEY: ${{ secrets.KMP }}
         run: npm run build
 
-#       - name: deploy
-#         run: npm run test
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           GH_PAT: ${{ secrets.GITHUB_API_KEY }}
-#           BUILD_DIR: 'public/'
-      - name: ls
-        run: ls
-      - name: gatsby build
+      - name: deploy
+        run: npm run deploy
         env:
-          GH_API_KEY: ${{ secrets.KMP }}
-        run: gatsby build && gh-pages -d public -b master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.KMP }}
+          BUILD_DIR: 'public/'
+
 
