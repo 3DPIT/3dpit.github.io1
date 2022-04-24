@@ -14,6 +14,8 @@ jobs:
 #           deploy-branch: master
       - name: gatsby
         run: npm install -g gatsby-cli
+      - name: npm install
+        run: npm install
       - name: deploy
         run: npm run deploy
         
