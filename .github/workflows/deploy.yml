@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://npm.pkg.github.com'
-      - run: npm deploy
+      - run: npm install
+      - run: npm run deploy
         env:
           NODE_AUTH_TOKEN: ${{ secrets.KMP }}
