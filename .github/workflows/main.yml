@@ -19,6 +19,10 @@ jobs:
       - name: Install packages
         run: npm ci
 
+      - name: git email
+        run: git config --global user.email oksos0817@naver.com
+      - name: git name
+        run: git config --global user.name 3dpit
       # 테스트를 수행합니다.
       - name: Run unit test
         run: npm run test
