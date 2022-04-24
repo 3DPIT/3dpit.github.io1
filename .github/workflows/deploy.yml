@@ -12,6 +12,8 @@ jobs:
 #         with:
 #           access-token: ${{ secrets.KMP }}
 #           deploy-branch: master
+      - name: gatsby
+        run: npm install -g gatsby-cli
       - name: deploy
         run: npm run deploy
         
