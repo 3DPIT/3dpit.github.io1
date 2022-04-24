@@ -1,7 +1,7 @@
 ---
 title: '22-04-09-GitBlog-MdImageSave'
 date: 2022-04-09 14:08:00 +0900
-category: 'Github_Blog'
+category: 'Blog_Jekyll'
 draft: false
 ---
 ## 목차
@@ -27,11 +27,11 @@ draft: false
 ![](../../assets/img/post/22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-49-14.png)
 - paste image 입력후 설치를 진행
 - 설치를 하고 톱니바퀴 모양 클릭
-![](../../assets/img/post22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-51-48.png)
+![](../../assets/img/post/22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-51-48.png)
 ### 02.1 아래와 같이 설정하기
-![](../../assets/img/post22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-52-39.png)
-![](../../assets/img/post22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-52-58.png)
+![](../../assets/img/post/22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-52-39.png)
+![](../../assets/img/post/22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-52-58.png)
 - 위와 같이 설정하면 이렇게 경로로 알아서 만들어지고 들어감
-![](../../assets/img/post22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-53-34.png)
-![](../../assets/img/post22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-53-48.png)
+![](../../assets/img/post/22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-53-34.png)
+![](../../assets/img/post/22-04-09-GitBlog-MdImageSave.md.assets/2022-04-09-16-53-48.png)
 - 좀더 편하게 블로그에 스크린샷 이미지를 적용할 수 있음

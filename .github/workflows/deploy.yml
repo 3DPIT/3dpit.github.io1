@@ -1,9 +1,8 @@
+name: deploy
 on:
   push:
-    branches:
-      - main
-      
-name: gatsby deploy
+    branches: [ main ]
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
