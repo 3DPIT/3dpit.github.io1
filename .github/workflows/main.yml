@@ -21,7 +21,19 @@ jobs:
 
       # 테스트를 수행합니다.
       - name: Run unit test
-        run: npm install -g gatsby-cli
+        run: npm run test
+
+      - name: gatsby build
+        env:
+          GH_API_KEY: ${{ secrets.KMP }}
+        run: npm run build
+
+#       - name: deploy
+#         run: npm run test
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           GH_PAT: ${{ secrets.GITHUB_API_KEY }}
+#           BUILD_DIR: 'public/'
 
       - name: gatsby build
         env:
