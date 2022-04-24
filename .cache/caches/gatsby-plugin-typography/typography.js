@@ -1,0 +1,1 @@
+module.exports = require("F:\\2022\\work\\Gatsby\\3dpit.github.io\\src\\utils\\typography")
