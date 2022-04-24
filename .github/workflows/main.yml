@@ -2,72 +2,14 @@ on:
   push:
     branches:
       - main
-name: build gatsby
+      
+name: gatsby deploy
 jobs:
-  build_gatsby:
-    name: build
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      # Node 14.x를 사용합니다.
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: enrikke/gatsby-gh-pages-action@v2.1.1
         with:
-          node-version: '14.x'
-
-      # 모듈을 설치합니다.
-      - name: Install packages
-        run: npm ci
-
-#       - name: git email
-#         run: git config --global user.email oksos0817@naver.com
-#       - name: git name
-#         run: git config --global user.name 3DPIT
-      # 테스트를 수행합니다.
-      - name: Run unit test
-        run: npm run test
-
-      - name: gatsby build
-        env:
-          GH_API_KEY: ${{ secrets.KMP }}
-        run: npm run build
-      - name: deploy
-        uses: maxheld83/ghpages@v0.2.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_PAT: ${{ secrets.KMP }}
-          BUILD_DIR: 'public/'
-#       - name: deploy
-#         run: npm run deploy
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           GH_PAT: ${{ secrets.KMP }}
-#           BUILD_DIR: 'public/'
-
-
-# on:
-#   push:
-#     branches:
-#       - main
-# name: build gatsby
-# jobs:
-#   build_gatsby:
-#     name: build
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v1
-
-#       - name: yarn install
-#         run: yarn install
-
-#       - name: gatsby build
-#         env:
-#           GH_API_KEY: ${{ secrets.KMP }}
-#         run: yarn build
-
-#       - name: deploy
-#         uses: maxheld83/ghpages@v0.2.1
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           GH_PAT: ${{ secrets.KMP }}
-#           BUILD_DIR: 'public/'
+          access-token: ${{ secrets.KMP }}
+          deploy-branch: master
